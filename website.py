@@ -22,7 +22,7 @@ model, encoder, scaler = load_model()
 # Load sample dataset hanya untuk referensi kolom & nilai default
 @st.cache_data
 def load_data():
-    return pd.read_csv("Clean Dataset/fraudTrain_dataset_cleaned.csv")
+    return pd.read_csv("fraudTrain_dataset_cleaned.csv")
 
 df = load_data()
 
