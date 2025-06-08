@@ -80,7 +80,7 @@ model, encoder, scaler = load_model()
 # ==================== Load Dataset ====================
 @st.cache_data
 def load_data():
-    file_path = "Clean Dataset/fraudTrain_dataset_cleaned.csv"
+    file_path = "fraudTrain_dataset_cleaned.csv"
     if os.path.exists(file_path):
         return pd.read_csv(file_path)
     else:
