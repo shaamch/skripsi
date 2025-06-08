@@ -91,7 +91,7 @@ Below is a list of all input fields used in the prediction. Fields marked with
 # ==================== Load Dataset ====================
 @st.cache_data
 def load_data():
-    path = "Clean Dataset/fraudTrain_dataset_beforeRUS.csv"
+    path = "fraudTrain_dataset_cleaned.csv"
     if os.path.exists(path):
         return pd.read_csv(path)
     else:
